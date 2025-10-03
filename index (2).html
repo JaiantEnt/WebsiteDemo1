@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jaiant Enterprises — Power & Industrial Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;background:#fff;color:#222;font-family:'Inter',sans-serif;}
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1180px,92vw);margin:0 auto}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .logo{font-weight:800;font-size:20px;color:#0a3d91}
+    .nav .actions{display:flex;gap:10px}
+    .btn{padding:10px 16px;border-radius:6px;border:1px solid #0a3d91;background:#0a3d91;color:#fff;font-weight:600}
+    .btn.secondary{background:#fff;color:#0a3d91}
+    .hero{padding:80px 0;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+    h1{font-size:42px;margin:0;color:#0a3d91}
+    p.lead{font-size:18px;color:#444;line-height:1.5}
+    .hero img{max-width:100%;border-radius:10px;border:1px solid #eee}
+    section{padding:60px 0}
+    h2{text-align:center;font-size:28px;color:#0a3d91;margin-bottom:30px}
+    .brands-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:20px}
+    .brand{border:1px solid #eee;padding:16px;text-align:center;border-radius:8px;background:#fafafa;font-weight:600;color:#333}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .service{border:1px solid #eee;border-radius:10px;padding:20px;background:#fafafa}
+    .service h4{margin:0 0 8px;color:#0a3d91}
+    .service p{color:#555;font-size:15px}
+    .cta{background:#f5f9ff;padding:30px 0;text-align:center}
+    .cta strong{color:#0a3d91}
+    form{max-width:600px;margin:0 auto;display:grid;gap:14px}
+    input,select,textarea{padding:12px;border:1px solid #ccc;border-radius:8px;font-size:15px}
+    button.submit{background:#0a3d91;color:#fff;border:none;padding:14px;border-radius:8px;font-weight:600;font-size:16px;cursor:pointer}
+    footer{padding:30px 0;text-align:center;font-size:14px;color:#555;border-top:1px solid #eee;background:#fafafa}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="logo">Jaiant Enterprises</div>
+    <div class="actions">
+      <a class="btn secondary" href="tel:+919702105499">Call</a>
+      <a class="btn secondary" href="https://wa.me/919702105499">WhatsApp</a>
+      <a class="btn" href="#quote">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div>
+    <h1>One‑stop Power & Industrial Backup Solutions</h1>
+    <p class="lead">We provide batteries, inverters, gensets, switchgear, burners, instruments and sensors from the top global brands. Expert selection, quick availability, and after‑sales support — all in one place.</p>
+    <div style="margin-top:20px;">
+      <a class="btn" href="#quote">Request a Quote</a>
+    </div>
+  </div>
+  <img src="assets/batteries.jpg" alt="Products">
+</section>
+
+<section>
+  <h2>Trusted Brands</h2>
+  <div class="wrap brands-grid">
+    <div class="brand">Exide</div><div class="brand">Amara Raja</div><div class="brand">Vertiv</div><div class="brand">APC</div>
+    <div class="brand">Luminous</div><div class="brand">Tata Green</div><div class="brand">Okaya</div><div class="brand">Delta</div>
+    <div class="brand">HBL</div><div class="brand">Kirloskar</div><div class="brand">ABB</div><div class="brand">Siemens</div>
+    <div class="brand">Honeywell</div><div class="brand">SICK</div><div class="brand">Baumer</div><div class="brand">ifm</div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="wrap grid-3">
+    <div class="service"><h4>Batteries</h4><p>Lead‑acid, lithium‑ion, Ni‑Cd batteries for residential, solar, automotive, traction & gensets.</p></div>
+    <div class="service"><h4>Inverters & EV Chargers</h4><p>Smart & hybrid inverters, UPS, solar/on‑grid/off‑grid systems, EV charging solutions.</p></div>
+    <div class="service"><h4>Gensets</h4><p>Diesel & gas powered gensets (2.1–160 kVA) for residential, commercial & industrial use.</p></div>
+    <div class="service"><h4>Switchgear & Drives</h4><p>Motor starters, VFDs, panels, encoders, automation accessories.</p></div>
+    <div class="service"><h4>Burners & Accessories</h4><p>Combustion control, valves, burner components and spares.</p></div>
+    <div class="service"><h4>Instruments & Sensors</h4><p>Pressure, temperature, flow instruments; inductive, ultrasonic & laser sensors.</p></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <strong>Need a quick quote?</strong> Share your requirements today — we respond fast.<br><br>
+    <a class="btn" href="#quote">Request a Quote</a>
+  </div>
+</section>
+
+<section id="quote">
+  <h2>Request a Quote</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Phone" required>
+    <select>
+      <option>Select Service</option>
+      <option>Batteries</option>
+      <option>Inverters & EV Chargers</option>
+      <option>Gensets</option>
+      <option>Switchgear & Drives</option>
+      <option>Burners & Accessories</option>
+      <option>Instruments & Sensors</option>
+    </select>
+    <textarea rows="4" placeholder="Your requirements"></textarea>
+    <button class="submit" type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>📍 Shop No.01, Krishna Kanhaiya CHS, Sector 08, Airoli, Navi Mumbai – 400708</p>
+    <p>📍 Plot No. 17/17, New Kolkewadi, At Post Khandat, Chiplun, Ratnagiri – 415605</p>
+    <p>📞 +91 9702105499 / 9702105498 | ✉️ manish.shinde@jaiant.com</p>
+    <p>© 2025 Jaiant Enterprises. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
